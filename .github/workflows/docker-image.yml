@@ -33,4 +33,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            lucacalcaterra/traefik-forward-auth:latest
+            ghcr.io/lucacalcaterra/traefik-forward-auth:latest
