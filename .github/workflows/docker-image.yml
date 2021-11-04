@@ -1,4 +1,4 @@
-name: docker-build-and-push
+name: docker-build-arm-and-push
 
 on:
   push:
@@ -30,7 +30,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6
+          file: ./Dockerfile.arm
+          platforms: linux/arm64,linux/arm/v7,linux/arm/v6
           push: true
           tags: |
-            ghcr.io/lucacalcaterra/traefik-forward-auth:latest
+            ghcr.io/lucacalcaterra/traefik-forward-auth:arm
