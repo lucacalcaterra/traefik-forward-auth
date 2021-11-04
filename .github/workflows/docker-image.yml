@@ -20,4 +20,5 @@ jobs:
           username: "lucacalcaterra"
           password: ${{ secrets.GITHUB_TOKEN }}
           repository: lucacalcaterra/traefik-forward-auth
+          platforms: linux/amd64,linux/arm64,linux/arm
           tags: latest
